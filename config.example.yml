@@ -12,10 +12,10 @@ database:
 
 filters:
   iv:
-    enabled: "IV %"
+    enabled: "IV %"  # Name pattern of instances we want to fetch data from. Use % to match anything.
     replace:
-      - [ "IV ", "" ]
-      - [ "_", " " ]
+      - [ "IV ", "" ]  # Replace any "IV " with "" (nothing).
+      - [ "_", " " ]  # Replace any "_" with " ".
 
   raid:
     enabled: "Raid %"
