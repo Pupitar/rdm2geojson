@@ -1,0 +1,30 @@
+app:
+  log_level: INFO
+  precision: 6
+
+database:
+  type: mysql
+  host: 127.0.0.1
+  user: rdmuser
+  password: rdmpassword
+  name: rdmdb
+  connect_timeout: 5
+
+filters:
+  iv:
+    enabled: "IV %"
+    replace:
+      - [ "IV ", "" ]
+      - [ "_", " " ]
+
+  raid:
+    enabled: "Raid %"
+    replace:
+      - [ "Raid ", "" ]
+      - [ "_", " " ]
+
+  quest:
+    enabled: "Quest %"
+    replace:
+      - [ "Quest ", "" ]
+      - [ "_", " " ]
